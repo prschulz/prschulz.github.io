@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<header>
+<!-- title of site -->
+<title>Peter's 10 Things</title>
 
+<!-- link to normalize css; not entirely sure why... mainly because Dash said so -->
+<link href="/normalize.css" rel="stylesheet">
+
+<!--Link to my stylesheet-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--Google font Montserrat for the h2 articles. BuzzFeed uses Proxima Nova, but this is the best GF alternative-->
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<!--Adding images for JS Slider-->
+<script type="text/javascript">
+var img1=new Image()
+img1.src="http://i.imgur.com/ZGYtZLcl.jpg"
+var img2=new Image()
+img2.src="http://i.imgur.com/iAb9hUYl.jpg"
+var img3=new Image()
+img3.src="http://i.imgur.com/x51GLmnl.jpg"
+</script>
+
+</head>
+
+<!--header to create a buzzfeed styled header section -->
+<header>
+	<div id="content">
+
+	<!-- Right hand image is screenshot of buzzfeed top bar. Can't figure out sprite sheet and would like to learn how.-->
+	<h1>BuzzFeed <span style="float: right; margin-right: 10%; margin-top: 0px;"><img src="http://i.imgur.com/lHk1Z3P.png"></span></h1>
+	</div>
+
+	<!--Fake menu resembling Buzzfeed's-->
+	<ul>
+	    <li><a href="#">NEWS</a></li>
+	    <li><a href="#">ENTERTAINMENT</a></li>
+	    <li><a href="#">LIFE</a></li>
+	   	<li><a href="#">VIDEOS</a></li>
+	   	
+	   	<!-- Style to add last border on menu. Not sure how to do this without getting double borders in CSS sheet. -->
+	   	<li style="border-right: 1px solid rgb(194,194,194);"><a href="#">MORE</a></li>
+	  </ul>
 
 </header>
+
 <body>
-	<h1>Hi Taylor Face</h1>
-	<input type="email" placeholder="email">
+<div id="content">
+	
+<!--Div to fix title spacing-->
+	<div class="title">
+		<h2>8 Things You Need to Know About Peter That You Probably Can't Find on LinkedIn</h2>
+		<h4>But for facts you would see on a resume you should probably still look at <a href="https://www.linkedin.com/in/prschulz" style="color: blue" target="_blank">LinkedIn</a>...</h4>
+		<p class="post">Posted on June 21, 2014, at 4:00pm</p> 
+	</div>
+
+<!-- #1 is first article and JS Slider-->
+	<article>
+		<h3>1. You probably need to know what he looks like... </h3>
+		
+		<!-- Div class for slider so I can style without affecting all images-->
+		<div class="slider">
+			<!--Image that will change src based on the name "slide"-->
+			<img src="http://i.imgur.com/ZGYtZLcl.jpg" name="slide" width="600px" height="450px">
+		</div>
+	</article>
+
+	<!-- How to contact me # 2-->
+	<article>
+		<h3>2. And How to Contact Him</h3>
+		
+			<!-- Found a cool icon pack on deviant art - used social class to change ul and li css -->
+			<ul class="social">
+				<!-- facebook -->
+				<li class="social"><a href="https://www.facebook.com/peter.raabbiitt" target="_blank"><img src="http://i.imgur.com/V3Y0l4f.png" alt="facebook"></a></li>
+				<!-- instagram -->
+				<li class="social"><a href="http://instagram.com/prschulz" target="_blank"><img src="http://i.imgur.com/Q2MTwer.png" alt="instagram"></a></li>
+				<!-- gmail -->
+				<li class="social"><a href="mailto:PRSchulz88@gmail.com" target="_blank"><img src="http://i.imgur.com/bQv91pb.png" alt="Mail"></a></li>
+			</ul>
+			<ul class="social">
+				<!-- phone - Not sure if it will launch phone app ?? -->
+				<li class="social"><a href="tel:707-738-7416" target="_blank"><img src="http://i.imgur.com/PKVvCMr.png" alt="phone"></a></li>
+				<!-- maps -->
+				<li class="social"><a href="https://www.google.com/maps/place/North+of+the+Panhandle/@37.7763168,-122.4423515,16z/data=!3m1!4b1!4m2!3m1!1s0x808580b32582fadf:0x736c3c708365f228" target="_blank"><img src="http://i.imgur.com/cN3LzYL.png" alt="Address"></a></li>
+				<!-- Hype Machine -->
+				<li class="social"><a href="http://hypem.com/peterthepeach" target="_blank"><img src="http://i.imgur.com/Me93ljw.png" alt="Hype Machine"></a></li>
+			
+			</ul>
+	</article>
+	
+	<!-- Where I am from # 3-->
+	<article>
+		<h3>3. Wine Country Grown</h3>
+		<img src="http://i.imgur.com/uumSHE5l.jpg" width="600px" height="450px">
+		<p>I grew up in  beautiful St. Helena, CA. </p>
+	</article>
+
+<!-- My love of fantasy books # 4-->
+	<article>
+		<h3>4. He loves fantasy books</h3>
+		<img src="http://i.imgur.com/G5mKV3R.jpg" height="450px">
+		<p><span style="font-style: italicize;">The Name of the Wind</span> is by far my favorite book. If you haven't read it, read it. If you have read it, then you should know that silence comes in 3 parts and there are 3 things every wise man should fear.</p>
+	</article>
+
+	<!-- Whiskey # 5-->
+	<article>
+		<h3>5. Whiskey is his drink of choice</h3>
+		<img src="http://i.imgur.com/5xarMX1.jpg" width="600px" height="450px">
+		<p>And his whiskey of choice is Stranahans. Liquid gold distilled in Denver, CO. </p>
+	</article>
+
+	<!-- Books # 6-->
+	<article>
+		<h3>6. He studied abroad in Roma</h3>
+		<img src="http://i.imgur.com/CKhKgHOl.jpg" width="600px" height="450px">
+		<p>And I took this picture.</p>
+	</article>
+
+	<!-- Carebear # 7-->
+	<article>
+		<h3>7. He has dressed as a carebear for halloween 3 years in a row</h3>
+		<img src="http://i.imgur.com/bOwyjAul.jpg" height="450px">
+		<p>Tell me you wouldn't if you had made this costume... Please try not to carebearstare.</p>
+	</article>
+
+<!-- What I love to do# 8-->
+	<article>
+		<h3>8. Last, he loves doing things like this</h3>
+		<img src="http://i.imgur.com/7FD9GCfl.png" width="600px" height="450px">
+		<p>Building this application has given me a sense of fulfillment and creative confidence that I have not felt in quite some time. This process has truly solidified my decision to become a developer. If given the opportunity, it would be an honor to do so with General Assembly.</p>
+	</article>
+
+</div>
+
+<!--Javascript section at end of body-->
+<script>
+//iterator; Is using n bad? It is what I usually use in Excel VBA. 
+var n=1
+
+//Slider function
+function slider(){
+		//search document for image named "slide", set src = to image loaded in head, eval = the img variable name
+		document.images.slide.src=eval("img"+n+".src")
+		
+		//if stmt to iterate through img #s
+		if (n<3)
+			n=n+1
+		else
+			n=1
+
+		//use timer to call function every 2 seconds
+		setTimeout('slider()',2000)
+	};
+
+	slider()
+
+</script>
 </body>
+
+<footer>
+	<p>And lastly, to satisfy the final requirement in the assignment -- here is the first picture that pops up when you google "funniest picture ever" <br>
+	</p>
+	
+	<!--Using figure and figcaption to tie caption to photo-->
+	<figure>
+	<img src="http://i.imgur.com/JYEKvQpl.jpg" alt="funniest picture ever" width="600px" height="450px">
+	<figcaption>According to Google, this is the funniest picture ever.</figcaption>
+	</figure>		
+</footer>
